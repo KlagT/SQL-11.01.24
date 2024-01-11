@@ -24,3 +24,11 @@
 
 ---Zad 7
 --SELECT EXISTS(SELECT 1 FROM person WHERE name = 'Anna') as result;
+
+---Zad 1big
+--SELECT object_name FROM (
+--	SELECT pizza_name AS object_name,'pizza' AS type FROM menu
+--	UNION ALL
+--	SELECT name, 'name' FROM person
+--	ORDER BY type DESC
+--)   as tab
