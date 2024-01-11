@@ -1,0 +1,26 @@
+---Zad 2
+--SELECT name, age FROM person WHERE address = 'Kazan'
+
+---Zad 3
+--SELECT name, age FROM person WHERE gender = 'female' AND address = 'Kazan'
+
+---Zad 4
+--SELECT name, rating FROM pizzeria WHERE rating BETWEEN 3.5 AND 5
+--UNION ALL
+--SELECT name,rating FROM pizzeria WHERE rating >= 3.5 AND rating <= 5 ORDER BY rating;
+
+---Zad 5
+--SELECT person_id FROM person_visits
+--WHERE pizzeria_id = 2 OR visit_date BETWEEN '2022-01-01' AND '2022-01-04'
+--ORDER BY person_id DESC
+
+---Zad 6
+--SELECT p.name
+--FROM person p
+--WHERE p.id IN (
+--    SELECT person_id
+--    FROM person_order
+--	)
+
+---Zad 7
+--SELECT EXISTS(SELECT 1 FROM person WHERE name = 'Anna') as result;
